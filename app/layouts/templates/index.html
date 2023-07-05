@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SPBU Receipt Print</title>
+    <title>Print SPBU Receipt</title>
 
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
@@ -14,14 +14,24 @@
 
         <section>
             <hgroup>
-                <h1>SRP</h1>
-                <h2>SPBU Receipt Print</h2>
+                <h1>PSR</h1>
+                <h2>Print SPBU Receipt</h2>
             </hgroup>
         </section>
     </header>
 
     <main class="w-full">
-
+        <section>
+            <form action="" method="post">
+                <select name="type" id="">
+                    <option value="">--Pilih Jenis--</option>
+                    <option value="ptl">Pertalite</option>
+                    <option value="ptm">Pertamax</option>
+                    <option value="ptmt">Pertamax Turbo</option>
+                </select>
+                
+            </form>
+        </section>
     </main>
 
     <footer class="w-full flex justify-center space-y-2">
